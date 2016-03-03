@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.creativestudioaq.honggyu.Memkey">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="MemKey"
+        android:theme="@style/AppTheme"
+        >
+        <receiver android:name="com.creativestudioaq.honggyu.Memkey.WidgetProvider"
+            android:label="MemKey">
+            <intent-filter>
+                <action android:name ="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_basic"/>
+        </receiver>
+
+        <!-- 스플래시 액티비티-->
+        <activity
+            android:name="com.creativestudioaq.honggyu.Memkey.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.creativestudioaq.honggyu.Memkey.MainActivity"
+            android:label="MemKey"
+            android:screenOrientation="portrait">
+                <meta-data
+                 android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_provider_basic"/>
+        </activity>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.Searching"/>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.PasswordSplash"/>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.CategoryEditActivity"/>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.CategoryActivity"/>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.CategoryContentActivity"/>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.ContentActivity"/>
+        <activity android:name ="com.creativestudioaq.honggyu.Memkey.WriteActivity">
+            <intent-filter
+                android:label="MemKey" >
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.APPWIDGET_CONFIGURE" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            </activity>
+        <activity android:name="com.creativestudioaq.honggyu.Memkey.EditActivity"/>
+        <activity android:name="com.creativestudioaq.honggyu.Memkey.SettingActivity"/>
+        <activity android:name="com.creativestudioaq.honggyu.Memkey.VersionActivity"/>
+        <activity android:name="com.creativestudioaq.honggyu.Memkey.TipActivity"/>
+        <activity android:name="com.creativestudioaq.honggyu.Memkey.PasswordActivity"/>
+    </application>
+
+</manifest>

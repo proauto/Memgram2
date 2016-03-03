@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#024271"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#FFFFFF"
+        android:id="@+id/voidbar1"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:minHeight="0dp"
+        android:maxHeight="200dp"
+        android:adjustViewBounds="true"
+
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:id ="@+id/day"
+        android:textSize="10dp"
+        android:gravity="start|bottom"
+        android:background="#FFFFFF"
+        android:layout_marginStart="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/memo"
+        android:textSize="10pt"
+        android:background="#FFFFFF"
+        android:layout_marginStart="5dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+         android:background="#FFFFFF"
+        android:id="@+id/voidbar2"
+
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:divider="#00000000"
+        android:id="@+id/voidbar3"
+
+        />
+
+</LinearLayout>

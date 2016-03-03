@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:id="@+id/searching"
+        android:singleLine = "true"
+        android:lines = "1"
+        android:layout_marginStart="50dp"
+        android:background="@null"
+        android:layout_marginRight="15dp"
+        />
+    <ImageView
+        android:layout_width="180dip"
+        android:layout_height="30dip"
+        android:background="@drawable/search"
+        android:id="@+id/searchimage"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="180dip"
+        android:layout_height="30dip"
+        android:background="@drawable/set_back"
+        android:layout_below="@+id/searching"
+        android:id="@+id/setting"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+
+         />
+
+    <TextView
+        android:id="@+id/myImageViewText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/setting"
+        android:layout_alignTop="@id/setting"
+        android:layout_alignRight="@id/setting"
+        android:layout_alignBottom="@id/setting"
+       android:gravity="center"
+        android:text="설정"
+        android:textColor="#024271"
+        android:textSize="15sp"
+
+        />
+    <ImageView
+        android:layout_width="180dip"
+        android:layout_height="30dip"
+        android:background="@drawable/add_back"
+        android:id="@+id/plus"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/setting" />
+
+    <TextView
+        android:id="@+id/myImageViewText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/plus"
+        android:layout_alignTop="@id/plus"
+        android:layout_alignRight="@id/plus"
+        android:layout_alignBottom="@id/plus"
+         android:gravity="center"
+        android:text="카테고리 추가"
+        android:textColor="#024271"
+        android:textSize="15sp"
+
+        />
+    <ImageView
+        android:layout_width="180dip"
+        android:layout_height="30dip"
+        android:background="@drawable/wholeicon"
+        android:id="@+id/wholeset"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/plus" />
+
+    <TextView
+        android:layout_width="25dip"
+        android:layout_height="48dip"
+        android:id="@+id/wholeshow"
+        android:layout_alignLeft="@id/wholeset"
+        android:layout_alignTop="@id/wholeset"
+        android:layout_alignRight="@id/wholeset"
+        android:layout_alignBottom="@id/wholeset"
+        android:text ="전체보기"
+        android:layout_below="@+id/plus"
+         android:textColor="#024271"
+        android:textSize="15sp"
+        android:gravity="center"
+
+        />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:layout_below="@+id/wholeshow"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/contentbackground"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        />
+
+
+</RelativeLayout>

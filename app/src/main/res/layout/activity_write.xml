@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_write">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_gravity="start"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+
+
+
+
+        <EditText
+             android:layout_width="fill_parent"
+             android:layout_height="330dp"
+             android:layout_margin="5dp"
+             android:id="@+id/content"
+             android:gravity="top|start"
+            android:background="@null"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/babo"
+        />
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contentbackground">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="카테고리 선택"
+        android:textColor="#024271"
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/SimpleView"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/SimpleView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/spinner"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+
+        />
+</RelativeLayout>
+</LinearLayout>
